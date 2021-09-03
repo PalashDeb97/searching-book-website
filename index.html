@@ -5,8 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Archive</title>
+
+    <!-- Bootstrap CSS File-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 </head>
 <body>
     
+  <!-- input-error-button section -->
+    <section class="container my-2">
+        <div class="row d-flex justify-content-center">
+          <div class="text-center my-4">
+            <h2>Please Search Your Favourite Book</h2>
+          </div>
+          <div class="col-6 mx-auto">
+            <!-- input -->
+            <input id="search-input" type="text" class="form-control my-2" placeholder="enter your book name"/>
+            <!-- error -->
+            <p class="text-danger" id="error"></p>
+            <!-- button -->
+            <div class="d-grid gap-2 col-4 mx-auto mt-2">
+              <button id="search-btn" class=" trxt-center btn btn-danger mt-2" >Search</button>
+            </div>
+
+          </div>
+        </div>
+        <hr />
+        <!-- results number -->
+        <div class="">
+          <p class="text-secondary" id="result-stats"></p>
+        </div>
+    </section>
+  
+
+    <!-- book-show section -->
+    <section class="container mt-2 mb-5">
+      <div id="book-show" class="row">
+
+      </div>
+    </section>
+
+
+    <!-- JS File-->
+    <script src="./js/script.js"></script>
 </body>
 </html>
